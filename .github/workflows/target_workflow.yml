@@ -17,13 +17,13 @@ jobs:
       # Add your workflow steps here
 
       - name: Extract Service Name & Version 
-          run: |
-            # Parse the service name from the payload
-            service_name=${{ github.event.client_payload.service }}
-            echo "Service Name: $service_name"
-            
-            # Parse the version name from the payload
-            version=${{ github.event.client_payload.version }}
-            echo "Version: $version"
+        run: |
+          # Parse the service name from the payload
+          service_name=${{ github.event.client_payload.service }}
+          echo "Service Name: $service_name"
+          
+          # Parse the version name from the payload
+          version=${{ github.event.client_payload.version }}
+          echo "Version: $version"
         
       # Continue with other workflow steps
